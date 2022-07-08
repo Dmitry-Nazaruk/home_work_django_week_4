@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{full_description.description}}<br><br>
+<a href="{{full_description.title}}/infobook">Полная информация о книге и авторе</a><br>
+{% if user.is_authenticated %}
+    <a href="{% url 'review' %}">Оставить рецензию</a>
+{% endif %}
+</body>
+</html>

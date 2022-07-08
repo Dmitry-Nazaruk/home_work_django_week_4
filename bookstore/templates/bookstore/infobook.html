@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Название книги: {{book.title}}</p>
+<p>Выход книги: {{book.released_year}}</p>
+<p>Описание книги: {{book.description}}</p>
+<p>Фамилия Имя автора книги: {{author.first_name}} {{author.last_name}}</p>
+<a href="{% url 'base' %}">Список всех книг</a><br>
+<a href="/infoauthor/{{author.id}}">Информация об авторе</a>
+</body>
+</html>

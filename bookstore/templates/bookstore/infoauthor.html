@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Фамилия: {{author.last_name}}</p>
+<p>Имя: {{author.first_name}}</p>
+<p>Возраст: {{author.age}}</p>
+<p>Автор книг: </p>
+{% for i in book_list %}
+     <a href="/{{i.title}}">{{i.title}}</a><br>
+{%endfor%}
+<a href="{% url 'base' %}">Список всех книг</a><br>
+</body>
+</html>
